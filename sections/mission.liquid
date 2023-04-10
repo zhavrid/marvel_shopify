@@ -9,7 +9,7 @@
   </div>
   <div class="info">
     <div class="picture">
-      {{ section.settings.image_1 | img_url: '350x' | img_tag }}
+      <img src="{{ section.settings.image_1 | img_url: '350x'}}"/>
     </div>
     <div class="text">
       {{ section.settings.description }}
