@@ -17,6 +17,7 @@
   </div>
 
 
+
   <div class="fiveblock">
     {% for block in section.blocks %}
       <div class="column_block">
@@ -33,12 +34,16 @@
     {% endfor %}
   </div>
 
+
+
+
 </div>
 
 {% schema %}
   {
     "name": "Mission",
     "tag": "section",
+    "limit": 1,
     "settings": [
       {
         "type": "text",
@@ -59,7 +64,7 @@
         "label": "Section description"
       }
     ],
-    
+    	"max_blocks": 5,
     "blocks": [
       {
         "name": "Text",
