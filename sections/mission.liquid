@@ -1,0 +1,93 @@
+{{ 'mission.scss.css' | asset_url | stylesheet_tag }}
+
+<div class="block">
+  <div class="mission">
+    {{ section.settings.title }}
+  </div>
+  <div class="line">
+    {{ section.settings.line }}
+  </div>
+  <div class="info">
+    <div class="picture">
+      <img src="{{ section.settings.image_1 | img_url: '350x'}}"/>
+    </div>
+    <div class="text">
+      {{ section.settings.description }}
+    </div>
+  </div>
+
+
+
+  <div class="fiveblock">
+    {% for block in section.blocks %}
+      <div class="column_block">
+        <div class="image_2">
+          <img src="{{ block.settings.image_2 | img_url : 'master' }}" />
+        </div>
+        <div class="title_block">
+          {{ block.settings.title_block }}
+        </div>
+        <div class="text_block">
+          {{ block.settings.text_block }}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+
+
+</div>
+
+{% schema %}
+  {
+    "name": "Mission",
+    "tag": "section",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title",
+        "default": "Mission"
+      }, {
+        "type": "text",
+        "id": "line",
+        "label": "Section line"
+      }, {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image"
+      }, {
+        "type": "inline_richtext",
+        "id": "description",
+        "label": "Section description"
+      }
+    ],
+    	"max_blocks": 5,
+    "blocks": [
+      {
+        "name": "Text",
+        "type": "text",
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_2",
+            "label": "Image"
+          },
+          {
+            "type": "text",
+            "id": "title_block",
+            "label": "Section title_block",
+            "default": "$1B"
+          }, {
+            "type": "text",
+            "id": "text_block",
+            "label": "Section text_block",
+            "default": "in closed RNG transactions in 2021 alone"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

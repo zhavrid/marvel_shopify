@@ -1,1 +1,65 @@
-{"sections":{"main":{"type":"main-page","settings":{"padding_top":28,"padding_bottom":28}}},"order":["main"]}
+{
+  "sections": {
+    "mission": {
+      "type": "mission",
+      "blocks": {
+        "d2e05a52-03a6-4af4-950f-ecdf2eb7a6f7": {
+          "type": "text",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/Group_263_1.svg",
+            "title_block": "$1B",
+            "text_block": "in closed RNG transactions in 2021 alone"
+          }
+        },
+        "ec8f2933-9c47-4799-a67d-75961b359c82": {
+          "type": "text",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/Group_262_1.svg",
+            "title_block": "$4B",
+            "text_block": "in cumulative Renewable Energy and RNG closings"
+          }
+        },
+        "a4265e84-a3fd-4223-be28-2632d9aa1136": {
+          "type": "text",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/Group_261_1.svg",
+            "title_block": "30 Yrs",
+            "text_block": "of collective industry experience"
+          }
+        },
+        "7338eb33-1b20-48bc-b9d5-b45d644b6956": {
+          "type": "text",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/Group_260_1.svg",
+            "title_block": "$300M",
+            "text_block": "in capital placed for client ventures"
+          }
+        },
+        "f623924f-bf56-466f-a6c7-cafb847bfa6b": {
+          "type": "text",
+          "settings": {
+            "image_2": "shopify:\/\/shop_images\/Group_259_1.svg",
+            "title_block": "100%",
+            "text_block": "independent and unbiased advice"
+          }
+        }
+      },
+      "block_order": [
+        "d2e05a52-03a6-4af4-950f-ecdf2eb7a6f7",
+        "ec8f2933-9c47-4799-a67d-75961b359c82",
+        "a4265e84-a3fd-4223-be28-2632d9aa1136",
+        "7338eb33-1b20-48bc-b9d5-b45d644b6956",
+        "f623924f-bf56-466f-a6c7-cafb847bfa6b"
+      ],
+      "settings": {
+        "title": "Mission",
+        "line": "",
+        "image_1": "shopify:\/\/shop_images\/2438_2.svg",
+        "description": "<strong>Energy Transition is our core and only focus.<\/strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity."
+      }
+    }
+  },
+  "order": [
+    "mission"
+  ]
+}
