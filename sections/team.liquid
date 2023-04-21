@@ -1,0 +1,145 @@
+{{ 'teme.scss.css' | asset_url | stylesheet_tag }}
+
+<div class="block_team">
+  <div class="team">
+    {{ section.settings.title }}
+  </div>
+  <div class="line_team">
+    {{ section.settings.line }}
+  </div>
+
+  <div class="twoblock">
+    {% for block in section.blocks %}
+      <div class="two_bloks">
+            <div class="info_img">
+                <div class="inf">
+                    <div class="name_arrow">
+                        <div class="meet_team">
+                            {{ block.settings.meet_team }}
+                        </div>
+                        <div class="arrow_meet">
+                          <img src="{{ block.settings.arrow_meet | img_url : 'master' }}"/>
+                        </div>
+                    </div>
+                    <div class="name_team">
+                        {{ block.settings.name_team }}
+                    </div>
+                    <div class="role">
+                        {{ block.settings.role }}
+                    </div>
+                </div>
+                <div class="img_team">
+                    <img src="{{ block.settings.img_team | img_url : 'master' }}"/>
+                </div>
+            </div>
+        <div class="discription">
+            {{ block.settings.discription }}
+        </div>
+        <div class="history">
+            {{ block.settings.history }}
+        </div>
+        <div class="list_history">
+            {{ block.settings.list_history }}
+        </div>
+        <div class="bottom">
+          <div class="education">
+            {{ block.settings.Education }}
+          </div>
+          <div class="list_education">
+            {{ block.settings.list_education }}
+          </div>
+          <div class="two_vector">
+            <div class="pic_one">
+              <img src="{{ block.settings.pic_one | img_url : 'master' }}"/>
+            </div>
+            <div class="pic_two">
+              <img src="{{ block.settings.pic_two | img_url : 'master' }}"/>
+            </div>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+
+
+</div>
+
+
+{% schema %}
+{
+    "name": "Team",
+    "tag": "section",
+    "limit": 1,
+    "settings": [
+    {
+        "type": "text",
+        "id": "title",
+        "label": "Team title",
+        "default": "Team"
+    },{
+        "type": "text",
+        "id": "line",
+        "label": "Team line"
+    }
+    ],"max_blocks": 2,
+    "blocks": [
+      {
+        "name": "Twobloks",
+        "type": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "meet_team",
+            "label": "Meet"
+          },{ 
+            "type": "image_picker",
+            "id": "arrow_meet",
+            "label": "Image Arrow"
+          },{
+            "type": "text",
+            "id": "name_team",
+            "label": "Name"
+          },{ 
+            "type": "text",
+            "id": "role",
+            "label": "Role"
+          },{ 
+            "type": "image_picker",
+            "id": "img_team",
+            "label": "Image"
+          },{ 
+            "type": "text",
+            "id": "discription",
+            "label": "Discription"
+          },{ 
+            "type": "text",
+            "id": "history",
+            "label": "Career History",
+            "default": "Career History"
+          },{ 
+            "type": "richtext",
+            "id": "list_history",
+            "label": "list"
+          },{ 
+            "type": "text",
+            "id": "Education",
+            "label": "Education",
+            "default": "Education"
+          },{ 
+            "type": "richtext",
+            "id": "list_education",
+            "label": "List Education"
+          },{ 
+            "type": "image_picker",
+            "id": "pic_one",
+            "label": "Image"
+          },{ 
+            "type": "image_picker",
+            "id": "pic_two",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+}
+{% endschema %}
