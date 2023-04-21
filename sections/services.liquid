@@ -1,0 +1,90 @@
+{{ 'services.scss.css' | asset_url | stylesheet_tag }}
+
+
+
+<div class="block_services">
+  <div class="services">
+    {{ section.settings.title }}
+  </div>
+  <div class="line_services">
+    {{ section.settings.line }}
+  </div>
+  <div class="text_section">
+    {{ section.settings.description }}
+  </div>
+
+  <div class="threeblock">
+    {% for block in section.blocks %}
+      <div class="three_bloks">
+        <div class="title_three_bloks">
+          {{ block.settings.title_three_bloks }}
+        </div>
+        <div class="list_three_bloks">
+         
+        {{ block.settings.list_three_bloks }}  
+        </div>
+        <div class="arrow">
+          <img src="{{ block.settings.arrow | img_url : 'master' }}" />
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class="text_section bottom">
+    {{ section.settings.bottom_text }}
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Services",
+    "tag": "section",
+    "limit": 1,
+    "settings": [
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Section title",
+        "default": "Services"
+      }, {
+        "type": "text",
+        "id": "line",
+        "label": "Section line"
+      }, {
+        "type": "text",
+        "id": "description",
+        "label": "Section line",
+        "default": "Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges."
+      }, {
+        "type": "text",
+        "id": "bottom_text",
+        "label": "Bottom text",
+        "default": "Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs."
+      }
+    ],"max_blocks": 3,
+    "blocks": [
+      {
+        "name": "Threebloks",
+        "type": "text",
+        "settings": [
+          {
+            "type": "text",
+            "id": "title_three_bloks",
+            "label": "Title",
+            "default": "Transaction Support"
+          },{
+            "type": "richtext",
+            "id": "list_three_bloks",
+            "label": "list"
+
+          },{ 
+            "type": "image_picker",
+            "id": "arrow",
+            "label": "Image"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
+
+

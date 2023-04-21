@@ -57,9 +57,98 @@
         "image_1": "shopify:\/\/shop_images\/2438_2.svg",
         "description": "<strong>Energy Transition is our core and only focus.<\/strong> We structure complex, meaningfully large renewable natural gas (RNG) and power transactions for companies committed to environmentally-sound, commercially-ready solutions.Our principals are experienced practitioners who have run companies, originated and closed complex deals, advocated and negotiated favorable policy and advanced technological innovation. With over three decades of combined experience in renewables specifically, our customers chose us, every time, for our unparalleled industry knowledge, market acumen, professionalism and commitment to their prosperity."
       }
+    },
+    "services": {
+      "type": "services",
+      "blocks": {
+        "c35a66b8-53fe-4a32-b8ce-20035b299feb": {
+          "type": "text",
+          "settings": {
+            "title_three_bloks": "Transaction Support",
+            "list_three_bloks": "<ul><li>Renewable Natural Gas offtake<\/li><li>RIN, RTC, REC and LCFS brokerage<\/li><li>Renewable PPA origination<\/li><li>Contract negotiations and structuring<\/li><\/ul>",
+            "arrow": "shopify:\/\/shop_images\/Group_163_1.svg"
+          }
+        },
+        "e542b2bd-ad27-47bf-909f-7ae0dc1d7b05": {
+          "type": "text",
+          "settings": {
+            "title_three_bloks": "Market Development",
+            "list_three_bloks": "<ul><li>Market advisory<\/li><li>Risk management<\/li><li>Capital sourcing or deployment<\/li><li>Resource optimization<\/li><\/ul>",
+            "arrow": "shopify:\/\/shop_images\/Group_163_1.svg"
+          }
+        },
+        "45fa44eb-948b-43b1-a74d-f92b1cfd9fa9": {
+          "type": "text",
+          "settings": {
+            "title_three_bloks": "Market Development",
+            "list_three_bloks": "<ul><li>New venture strategy<\/li><li>Go-to-market architecture<\/li><li>M&A support<\/li><li>Marketing and partnerships<\/li><\/ul>",
+            "arrow": "shopify:\/\/shop_images\/Group_163_1.svg"
+          }
+        }
+      },
+      "block_order": [
+        "c35a66b8-53fe-4a32-b8ce-20035b299feb",
+        "e542b2bd-ad27-47bf-909f-7ae0dc1d7b05",
+        "45fa44eb-948b-43b1-a74d-f92b1cfd9fa9"
+      ],
+      "settings": {
+        "title": "Services",
+        "line": "",
+        "description": "Our clients are at the forefront of energy transition and innovation. Their mandate is complex: balance project needs with customer demands, lofty investment targets and development complexities. Layer on market volatility and regulatory risk and the scope becomes less manageable in-house. This is where Marvel comes in. We understand the task and bring deep expertise to addressing these challenges.",
+        "bottom_text": "Our clients are time constrained and under-resourced. Agendas shift, budgets move and priorities change. We understand. We are agile, creative and immediately responsive to your various working styles, governance requirements and evolving needs."
+      }
+    },
+    "team": {
+      "type": "team",
+      "blocks": {
+        "73da6fed-5bbd-46c5-8c42-504291772bc2": {
+          "type": "text",
+          "settings": {
+            "meet_team": "Meet Katherine",
+            "arrow_meet": "shopify:\/\/shop_images\/Group_224_1.svg",
+            "name_team": "Katherine Ryzhaya",
+            "role": "Founder and CEO",
+            "img_team": "shopify:\/\/shop_images\/woman.svg",
+            "discription": "A serial entrepreneur and industry expert, Katherine has nearly 20 years of experience in running infrastructure businesses and closing complex energy transactions. As the sole founder of Marvel, in 2019, Katherine saw an opportunity to run a business her way — leading with high integrity, unmatched focus on service quality and utmost commitment to driving customers’ yields.",
+            "history": "Career History",
+            "list_history": "<ul><li>CEO, Renovar,<strong> Shell Digital <\/strong>Ventures<\/li><li>CCO, Lightsource bp<\/li><li>Co-Founder and CCO, AMS (acquired by Fluence, <strong>NASDAQ<\/strong>: FLNC)<\/li><li>VP and Director, Evolution Markets<\/li><li><strong>Principal<\/strong>, Pacific Gas and Electric Company<\/li><\/ul>",
+            "Education": "Education",
+            "list_education": "<ul><li>BS, Finance, <strong>University<\/strong> of San Francisco<\/li><li><strong>MBA, Finance,<\/strong> Duke University<\/li><\/ul>",
+            "pic_one": "shopify:\/\/shop_images\/Vector_2.svg",
+            "pic_two": "shopify:\/\/shop_images\/Mail.svg"
+          }
+        },
+        "e0853138-6a8e-480c-9126-e15a8f5a54d4": {
+          "type": "text",
+          "settings": {
+            "meet_team": "Meet Sam",
+            "arrow_meet": "shopify:\/\/shop_images\/Group_224_1.svg",
+            "name_team": "Sam Peelle",
+            "role": "Senior Director and Partner",
+            "img_team": "shopify:\/\/shop_images\/man.svg",
+            "discription": "Sam has over 10 years of experience in renewable power and gas markets, with expertise in renewable fuels, demand side management, energy procurement, energy storage and analytics. Throughout his career, Sam has worked on all sides of the transaction, in each case leading with integrity, customer service and a keen focus on delivering results that positively impact the client’s bottom line and environmental impact.",
+            "history": "Career History",
+            "list_history": "<ul><li>Director, <strong>AMS<\/strong> (acquired by Fluence, NASDAQ: FLNC)<\/li><li>Manager, <strong>EnerNOC <\/strong>(acquired by Enel, BIT: ENEL)<\/li><li>Regional Manager, <strong>United Technologies Corporation<\/strong><\/li><\/ul>",
+            "Education": "Education",
+            "list_education": "<ul><li>BA, Political Science, <strong>University <\/strong>of Pennsylvania<\/li><li>MBA, Finance, <strong>Babson College<\/strong><\/li><\/ul>",
+            "pic_one": "shopify:\/\/shop_images\/Vector_2.svg",
+            "pic_two": "shopify:\/\/shop_images\/Mail.svg"
+          }
+        }
+      },
+      "block_order": [
+        "73da6fed-5bbd-46c5-8c42-504291772bc2",
+        "e0853138-6a8e-480c-9126-e15a8f5a54d4"
+      ],
+      "settings": {
+        "title": "Team",
+        "line": ""
+      }
     }
   },
   "order": [
-    "mission"
+    "mission",
+    "services",
+    "team"
   ]
 }
