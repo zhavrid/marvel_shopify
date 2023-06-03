@@ -1,0 +1,87 @@
+{{ 'news.scss.css' | asset_url | stylesheet_tag }}
+
+
+<div class="block_team">
+  <div class="team">
+    {{ section.settings.title }}
+  </div>
+  <div class="line_team">
+    {{ section.settings.line }}
+  </div>
+  <div class="newsblocks">
+    {% for block in section.blocks %}
+        <div class="three_newsbloks">
+          <div class="image_slide">
+            <img src="{{ block.settings.image_slide | img_url : 'master' }}"/>
+          </div>
+          <div class="otst">
+            <div class="image_logo">
+              <img src="{{ block.settings.image_logo | img_url : 'master' }}"/>
+            </div>
+            <div class="descripts">
+              {{ block.settings.descript }}
+            </div>
+          </div>
+            <div class="display_datearrow">
+              <div class="date">
+                {{ block.settings.date }}
+              </div>
+              <div class="slide_arrow">
+                <img src="{{ block.settings.slide_arrow | img_url : 'master' }}"/>
+              </div>
+            </div>
+       
+        </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+{% schema %}
+    {
+        "name": "News",
+        "tag": "section",
+        "limit": 1,
+        "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "News title",
+            "default": "News"
+        },{
+            "type": "text",
+            "id": "line",
+            "label": "News line"
+        }
+        ],
+        "blocks": [
+          {
+            "name": "slide_blocks",
+            "type": "text",
+            "settings": [
+            { 
+                "type": "image_picker",
+                "id": "image_slide",
+                "label": "Image Slide"
+            },{ 
+                "type": "image_picker",
+                "id": "image_logo",
+                "label": "Image Logo"
+            },{
+                "type": "text",
+                "id": "descript",
+                "label": "Description"
+            },{
+                "type": "text",
+                "id": "date",
+                "label": "Date"
+            },{ 
+                "type": "image_picker",
+                "id": "slide_arrow",
+                "label": "Image arrow"
+            }
+            ]
+          }
+        ]
+    }
+{% endschema %}
